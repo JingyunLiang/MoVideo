@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MoVideo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="body">
+
+        <h1 id="title"></h1>
+        <br>
+        <div id="author-list">
+        </div>
+        <br>
+        <div id="affiliation-list">
+        </div>
+        <div id="footnote">
+            <span ></span>
+        </div>
+        <div id="conference">
+        </div>
+        <div id="button-list">
+            <a id="paper">
+                <img src="assets/logos/arXiv.svg">
+                <span>paper</span>
+            </a>
+            <a id="supplementary">
+                <img src="assets/logos/arXiv.svg">
+                <span>supplementary material</span>
+            </a>
+        </div>
+
+        <div id="content" style="max-width:900px;margin:auto; margin-bottom: 1em" >
+            <section class="slider-wrapper">
+                <button class="slide-arrow slide-arrow-prev">
+                            &#8249;
+                </button>
+                <button class="slide-arrow slide-arrow-next">
+                            &#8250;
+                </button>
+
+                <ul class="slides-container">
+                    <li class="slide">
+                        <table style="margin-left:auto;margin-right:auto;">
+                            <tr>
+                                <th>
+                                        <span style="color: #009c3b; font-family: Bradley Hand;">A dog is chasing a ball on a sofa</span>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/A dog is chasing a ball on a sofa_i2vflow.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/A dog is chasing a ball on a sofa_v2iflow.mp4">
+                                    </video>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Text Prompt
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/A dog is chasing a ball on a sofa_occlusion.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/A dog is chasing a ball on a sofa_depth.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/A dog is chasing a ball on a sofa_ours.mp4">
+                                    </video>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Calculated Occlusion Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Depth Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video
+                                    </p>
+                                </th>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="slide">
+                        <table style="margin-left:auto;margin-right:auto;">
+                            <tr>
+                                <th>
+                                        <span style="color: #009c3b; font-family: Bradley Hand;">a car is moving on the snow</span>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a car is moving on the snow_i2vflow.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a car is moving on the snow_v2iflow.mp4">
+                                    </video>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Text Prompt
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a car is moving on the snow_occlusion.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a car is moving on the snow_depth.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a car is moving on the snow_ours.mp4">
+                                    </video>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Calculated Occlusion Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Depth Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video
+                                    </p>
+                                </th>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="slide">
+                        <table style="margin-left:auto;margin-right:auto;">
+                            <tr>
+                                <th>
+                                        <span style="color: #009c3b; font-family: Bradley Hand;">a fox flying over the rainbow in the sky</span>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a fox flying over the rainbow in the sky_i2vflow.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a fox flying over the rainbow in the sky_v2iflow.mp4">
+                                    </video>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Text Prompt
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a fox flying over the rainbow in the sky_occlusion.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a fox flying over the rainbow in the sky_depth.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a fox flying over the rainbow in the sky_ours.mp4">
+                                    </video>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Calculated Occlusion Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Depth Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video
+                                    </p>
+                                </th>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="slide">
+                        <table style="margin-left:auto;margin-right:auto;">
+                            <tr>
+                                <th>
+                                        <span style="color: #009c3b; font-family: Bradley Hand;">lightning and storm</span>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/lightning and storm_i2vflow.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/lightning and storm_v2iflow.mp4">
+                                    </video>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Text Prompt
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/lightning and storm_occlusion.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/lightning and storm_depth.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/lightning and storm_ours.mp4">
+                                    </video>
+                                </th>
+
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Calculated Occlusion Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Depth Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video
+                                    </p>
+                                </th>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="slide">
+                        <table style="margin-left:auto;margin-right:auto;">
+                            <tr>
+                                <th>
+                                        <span style="color: #009c3b; font-family: Bradley Hand;">a man in front of a waterfall</span>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a man in front of a waterfall _i2vflow.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a man in front of a waterfall _v2iflow.mp4">
+                                    </video>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Text Prompt
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video-to-Image Optical Flows
+                                    </p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a man in front of a waterfall _occlusion.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a man in front of a waterfall _depth.mp4">
+                                    </video>
+                                </th>
+                                <th>
+                                    <video autoplay muted loop height="256">
+                                        <source src="assets/visualization/a man in front of a waterfall _ours.mp4">
+                                    </video>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Calculated Occlusion Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Depth Maps
+                                    </p>
+                                </th>
+                                <th>
+                                    <p style="font-size:18px;">
+                                        Generated Video
+                                    </p>
+                                </th>
+                            </tr>
+                        </table>
+                    </li>
+                    
+                </ul>
+            </section>
+            <br>
+
+            <div id='method'> 
+                <h2>Abstract</h2>
+                <center><p style="max-width:900px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">While recent years have witnessed great progress on using diffusion models for video generation, most of them are simple extensions of image generation frameworks, which fail to explicitly consider one of the key differences between videos and images, i.e., motion. In this paper, we propose a novel motion-aware video generation (MoVideo) framework that takes motion into consideration from two aspects: video depth and optical flow. The former regulates motion by per-frame object distances and spatial layouts, while the later describes motion by cross-frame correspondences that help in preserving fine details and improving temporal consistency. More specifically, given a key frame that exists or generated from text prompts, we first design a diffusion model with spatio-temporal modules to generate the video depth and the corresponding optical flows. Then, the video is generated in the latent space by another spatio-temporal diffusion model under the guidance of depth, optical flow-based warped latent video and the calculated occlusion mask. Lastly, we use optical flows again to align and refine different frames for better video decoding from the latent space to the pixel space. In experiments, MoVideo achieves state-of-the-art results in both text-to-video and image-to-video generation, showing promising prompt consistency, frame consistency and visual quality.</p></center>
+            </div>
+            <br>
+            <div id='method'> 
+                <h2>Method Overview</h2>
+                <p style="max-width:900px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">The schematic illustration of the proposed motion-aware video generation (MoVideo) framework. Given a text prompt, we first generate the key frame by Latent Diffusion. Then, we generate video depth and optical flows conditional on the CLIP image embedding and frames per second. Next, we add extra conditions, including depth, flow-based warped latent video and calculated occlusion mask, to generate the video in the latent space. Last, the video is decoded with flow-based alignment and feature refinement.</p>
+                <img src="assets/imgs/pipeline.png" height=530>
+            </div>
+
+            <br>
+            <br>
+            <div id="results">
+                <h2>Comparison on Text-to-Video Generation</h2>
+                <div id="libby">
+                    <table style="width: 50%;margin-left:auto;margin-right:auto;">
+                        <tr>
+                            <th>
+                               <div>
+                                    Text Prompt
+                                </div>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">A dog is chasing a ball on a sofa</span>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">a car is moving on the snow</span>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">beautiful fireworks over the lake</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    VideoDiffusion
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/A dog is chasing a ball on a sofa_videodiffusion.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/a car is moving on the snow_videodiffusion.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/beautiful fireworks over the lake_videodiffusion.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    MoVideo (ours)
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/A dog is chasing a ball on a sofa_ours.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/a car is moving on the snow_ours.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/beautiful fireworks over the lake_ours.mp4">
+                                </video>
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    Text Prompt
+                                </div>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">a cow is running on the moon</span>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">a man is walking on the street, high resolution</span>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">a fox flying over the rainbow in the sky</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    VideoDiffusion
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/a cow is running on the moon_videodiffusion.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/a man is walking on the street, high resolution_videodiffusion.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/a fox flying over the rainbow in the sky_videodiffusion.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    MoVideo (ours)
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/a cow is running on the moon_ours.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/a man is walking on the street, high resolution_ours.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_compare/a fox flying over the rainbow in the sky_ours.mp4">
+                                </video>
+
+                            </th>
+                        </tr>
+                      </table>
+                </div>
+        </div>
+
+            <br>
+            <br>
+            <div id="results">
+                <h2>More Results on Text-to-Video Generation</h2>
+                <div id="libby">
+                    <table style="width: 50%;margin-left:auto;margin-right:auto;">
+                        <tr>
+                            <th>
+                               <div>
+                                    Text Prompt
+                                </div>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">A panda playing on a swing set</span>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">beach view</span>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">A boy running on beautiful wildflowers</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    Random Seed=0
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/A panda playing on a swing set_seed0.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/beach view_seed0.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/A boy running on beautiful wildflowers_seed0.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    Random Seed=1
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/A panda playing on a swing set_seed1.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/beach view_seed1.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/A boy running on beautiful wildflowers_seed1.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    Random Seed=2
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/A panda playing on a swing set_seed2.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/beach view_seed2.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_more/A boy running on beautiful wildflowers_seed2.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                      </table>
+                </div>
+
+
+              <br>
+            <br>
+            <div id="results">
+                <h2>Comparison on Image-to-Video Generation</h2>
+                <div id="libby">
+                    <table style="width: 50%;margin-left:auto;margin-right:auto;">
+                        <tr>
+                            <th>
+                               <div>
+                                    Key Frame
+                                </div>
+                            </th>
+                            <th>
+                                <img src="assets/image2video_compare/scooter-gray.png" height=256>
+                            </th>
+                            <th>
+                                <img src="assets/image2video_compare/boxing-fisheye.png" height=256>
+                            </th>
+                            <th>
+                                <img src="assets/image2video_compare/hike.png" height=256>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    Gen1
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/scooter-gray_gen1.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/boxing-fisheye_gen1.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/hike_gen1.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    MoVideo (ours)
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/scooter-gray_ours.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/boxing-fisheye_ours.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/hike_ours.mp4">
+                                </video>
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    GT
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/scooter-gray_gt.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/boxing-fisheye_gt.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/image2video_compare/hike_gt.mp4">
+                                </video>
+
+                            </th>
+                        </tr>
+                      </table>
+                </div>
+                <br>
+                <br>
+
+                <div id="results">
+                <h2>Generating Videos with Different FPS</h2>
+                <div id="libby">
+                    <table style="width: 50%;margin-left:auto;margin-right:auto;">
+                        <tr>
+                            <th>
+                               <div>
+                                    Text Prompt
+                                </div>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">a beautiful girl smiled and ran away</span>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">A rocket is flying to the sky</span>
+                            </th>
+                            <th>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">a boy in purple is skiing on the snow</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    fps=3
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/a beautiful girl smiled and ran away_fps3.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/A rocket is flying to the sky_fps3.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/a boy in purple is skiing on the snow_fps3.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    fps=10
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/a beautiful girl smiled and ran away_fps10.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/A rocket is flying to the sky_fps10.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/a boy in purple is skiing on the snow_fps10.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    fps=17
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/a beautiful girl smiled and ran away_fps17.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/A rocket is flying to the sky_fps17.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/a boy in purple is skiing on the snow_fps17.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                               <div>
+                                    fps=24
+                                </div>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/a beautiful girl smiled and ran away_fps24.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/A rocket is flying to the sky_fps24.mp4">
+                                </video>
+                            </th>
+                            <th>
+                                <video autoplay muted loop width="256">
+                                    <source src="assets/text2video_fps/a boy in purple is skiing on the snow_fps24.mp4">
+                                </video>
+                            </th>
+                        </tr>
+                      </table>
+                </div>
+        </div>
+            <p class="section">&nbsp;</p>
+            <!--p class="section" id="bibtex"--><h2>Bibtex</h2><!--/p-->
+            <table border="0">
+                <tbody>
+                <pre style=" display: block;
+                    background: #eee;
+                    white-space: pre;
+                    -webkit-overflow-scrolling: touch;
+                    max-width: 100%;
+                    min-width: 100px;
+                    border-radius: 20px;
+                    text-align: left
+                    ">
+
+    @article{liang2023MoVideo,
+          author= {Liang, Jingyun and Fan, Yuchen and Zhang, Kai and Timofte, Radu and Van Gool, Luc and Ranjan, Rakesh},
+          title={MoVideo: Motion-Aware Video Generation with Diffusion Models},
+          journal={arXiv preprint arXiv:2311.00000},
+          year={2023}
+    }
+                </pre>
+            </tbody>
+        </table>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="cocoen.js"></script> -->
+    <!-- <script>
+        Cocoen.parse(document.body);
+    </script> -->
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <a class="icon-link"
+             href="https://arxiv.org/abs/2311.00000">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+          <a class="icon-link" href="https://github.com/jingyunliang" class="external-link" disabled>
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This website is based on <a href="https://duyguceylan.github.io/pix2video.github.io">pix2video</a>, licensed under a <a rel="license"
+                                                    href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
