@@ -81,7 +81,7 @@ for (var i = 0; i < sliders.length; i++) set_slider(sliders[i])
 
 // Read JSON
 make_site({
-    "title": "MoVideo: Motion-Aware Video Generation with Diffusion Models",
+    "title": "MoVideo: Motion-Aware Video Generation with Diffusion Models (ECCV2024)",
     "conference": "",
     "authors": [
         {
@@ -99,7 +99,7 @@ make_site({
         {
             "name": "Kai Zhang",
             "email": "https://cszn.github.io/",
-            "affiliations": ["1"],
+            "affiliations": ["4"],
             "footnote": [""]
         },
 	    {
@@ -121,7 +121,7 @@ make_site({
             "footnote": [""]
         },
     ],
-     "affiliations": ["Computer Vision Lab, ETH Zurich, Switzerland", "Meta Inc", "University of Würzburg, Germany"],
+     "affiliations": ["Computer Vision Lab, ETH Zurich, Switzerland", "Meta Inc", "University of Würzburg, Germany", "Nanjing University, Suzhou, China"],
     "footnote": [""],
     "URLs": {
         "paper": "https://github.com/JingyunLiang/MoVideo/releases/download/v0.0/MoVideo.pdf",
