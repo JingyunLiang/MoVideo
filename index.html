@@ -399,17 +399,17 @@
                             </tr>
                         </table>
                     </li>
-                    
+
                 </ul>
             </section>
             <br>
 
-            <div id='method'> 
+            <div id='method'>
                 <h2>Abstract</h2>
                 <center><p style="max-width:900px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">While recent years have witnessed great progress on using diffusion models for video generation, most of them are simple extensions of image generation frameworks, which fail to explicitly consider one of the key differences between videos and images, i.e., motion. In this paper, we propose a novel motion-aware video generation (MoVideo) framework that takes motion into consideration from two aspects: video depth and optical flow. The former regulates motion by per-frame object distances and spatial layouts, while the later describes motion by cross-frame correspondences that help in preserving fine details and improving temporal consistency. More specifically, given a key frame that exists or generated from text prompts, we first design a diffusion model with spatio-temporal modules to generate the video depth and the corresponding optical flows. Then, the video is generated in the latent space by another spatio-temporal diffusion model under the guidance of depth, optical flow-based warped latent video and the calculated occlusion mask. Lastly, we use optical flows again to align and refine different frames for better video decoding from the latent space to the pixel space. In experiments, MoVideo achieves state-of-the-art results in both text-to-video and image-to-video generation, showing promising prompt consistency, frame consistency and visual quality.</p></center>
             </div>
             <br>
-            <div id='method'> 
+            <div id='method'>
                 <h2>Method Overview</h2>
                 <p style="max-width:900px; font-size:18px; margin:auto; text-align: justify; margin-bottom: 1em;">The schematic illustration of the proposed motion-aware video generation (MoVideo) framework. Given a text prompt, we first generate the key frame by Latent Diffusion. Then, we generate video depth and optical flows conditional on the CLIP image embedding and frames per second. Next, we add extra conditions, including depth, flow-based warped latent video and calculated occlusion mask, to generate the video in the latent space. Last, the video is decoded with flow-based alignment and feature refinement.</p>
                 <img src="assets/imgs/pipeline.png" height=530>
@@ -566,7 +566,7 @@
                                 <span style="color: #009c3b;font-family: Bradley Hand;">beach view</span>
                             </th>
                             <th>
-                                <span style="color: #009c3b;font-family: Bradley Hand;">A boy running on beautiful wildflowers</span>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">lightning and storm</span>
                             </th>
                         </tr>
                         <tr>
@@ -587,7 +587,7 @@
                             </th>
                             <th>
                                 <video autoplay muted loop width="256">
-                                    <source src="assets/text2video_more/A boy running on beautiful wildflowers_seed0.mp4">
+                                    <source src="assets/text2video_more/lightning and storm_seed0.mp4">
                                 </video>
                             </th>
                         </tr>
@@ -609,7 +609,7 @@
                             </th>
                             <th>
                                 <video autoplay muted loop width="256">
-                                    <source src="assets/text2video_more/A boy running on beautiful wildflowers_seed1.mp4">
+                                    <source src="assets/text2video_more/lightning and storm_seed1.mp4">
                                 </video>
                             </th>
                         </tr>
@@ -631,7 +631,7 @@
                             </th>
                             <th>
                                 <video autoplay muted loop width="256">
-                                    <source src="assets/text2video_more/A boy running on beautiful wildflowers_seed2.mp4">
+                                    <source src="assets/text2video_more/lightning and storm_seed2.mp4">
                                 </video>
                             </th>
                         </tr>
@@ -745,7 +745,7 @@
                                 </div>
                             </th>
                             <th>
-                                <span style="color: #009c3b;font-family: Bradley Hand;">a beautiful girl smiled and ran away</span>
+                                <span style="color: #009c3b;font-family: Bradley Hand;">An aircraft is moving on the water</span>
                             </th>
                             <th>
                                 <span style="color: #009c3b;font-family: Bradley Hand;">A rocket is flying to the sky</span>
@@ -762,7 +762,7 @@
                             </th>
                             <th>
                                 <video autoplay muted loop width="256">
-                                    <source src="assets/text2video_fps/a beautiful girl smiled and ran away_fps3.mp4">
+                                    <source src="assets/text2video_fps/An aircraft is moving on the water_fps3.mp4">
                                 </video>
                             </th>
                             <th>
@@ -784,7 +784,7 @@
                             </th>
                             <th>
                                 <video autoplay muted loop width="256">
-                                    <source src="assets/text2video_fps/a beautiful girl smiled and ran away_fps10.mp4">
+                                    <source src="assets/text2video_fps/An aircraft is moving on the water_fps10.mp4">
                                 </video>
                             </th>
                             <th>
@@ -806,7 +806,7 @@
                             </th>
                             <th>
                                 <video autoplay muted loop width="256">
-                                    <source src="assets/text2video_fps/a beautiful girl smiled and ran away_fps17.mp4">
+                                    <source src="assets/text2video_fps/An aircraft is moving on the water_fps17.mp4">
                                 </video>
                             </th>
                             <th>
@@ -828,7 +828,7 @@
                             </th>
                             <th>
                                 <video autoplay muted loop width="256">
-                                    <source src="assets/text2video_fps/a beautiful girl smiled and ran away_fps24.mp4">
+                                    <source src="assets/text2video_fps/An aircraft is moving on the water_fps24.mp4">
                                 </video>
                             </th>
                             <th>
